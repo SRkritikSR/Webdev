@@ -1,95 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>hello coursera</title>
+  <title>hello</title>
   <style>
-    body {
-      background-color:#00adb5;
+    * {
+      padding: 0;
+      margin:0;
+      background-color: #00adb5;
       font-family: 'Open Sans',sans-serif;
-      color:white;
       text-align: center;
-      position: relative;
-    }
-
-    h1 {
-      font-weight: 800;
-      font-size: 30px;
-      text-align: center;
-
-      }
-
-    }
-    .maintext {
-      font-size:15px;
-      font-weight: 100;
-      text-align: center;
+      color: white;
     }
     
-    .firstimg {
+    h1 {
+      font-weight: 800;
+      font-size: 40px;
+      text-align: center;
+      box-sizing: border-box;
+
+        }
+    .maintext {
+      font-size:20px;
+      font-weight: 100;
+      text-align: center;
+      margin-top: 20px;
+      }
+
+    .container {
+      position: relative;
+    }
+    img {
       display: block;
-      top: 250px;
-      left: 200px;
+      left:250px;
+      top: 200px;
+    
+    }
+    .firstimg {
+      top: 200px;
+      left: 250px;
       position: absolute;
       border-radius: 50%;
       border: 0.5px solid #F3FFE2;
-      /*add percentage instead of number to get respoive*/
     }
     .firstimg:hover {
       opacity: 0.7;
-
-    }
+      }
 
     .secondimg {
-      display: block;
-      top: 325px;
-      left: 900px;
+      top: 275px;
+      left: 950px;
       position: absolute;
-      border: 0.5px solid #F3FFE2;
+      border: 0.5px solid #F3FFE2;  
     }
     .secondimg:hover {
       opacity: 0.7;
-
-    }
-
+      }
     .thirdimg {
-      display: block;
-      top: 700px;
-      left: 200px;
-      border: 0.5px solid #F3FFE2;
+      top: 800px;
+      left: 250px;
       position: absolute;
+      border: 0.5px solid #F3FFE2;
     }
-
-    .thirdimg:hover {
+    .thirdimg:hover{
       opacity: 0.7;
-
-    }
-
+      }
     .fourthimg {
-      display: block;
-      top: 710px;
-      left: 900px;
-      border: 0.5px solid #F3FFE2;
-      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      top: 810px;
+      left: 950px;
       position: absolute;
-      background-size: 100% 100%;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      border: 0.5px solid #F3FFE2;
     }
-
     .fourthimg:hover{
       opacity: 0.7;
-    }
-  
-
-
-
+      }
     
   </style>
 </head>
 <body>
   <h1>New Zealand</h1>
-  <div class="maintext">This project might be trickier than it seems. Look around carefully. What you see?
+    <div class="maintext">This project might be trickier than it seems. Look around carefully. What you see?
     <div>The sky is blue, the grass is green. The sun shines through the window.</div>
-  </div>
-
+  <div class="container">
     <a href="picture1.html" target="_blank">
       <img class="firstimg" src="https://cdn.pixabay.com/photo/2015/03/18/10/07/new-zealand-679068_1280.jpg" alt="New Zealand Mountains" width="350px" height="350px">
     </a> 
@@ -102,6 +94,6 @@
     <a href="picture4.html" target="_blank">
       <img class="fourthimg" src="https://cdn.pixabay.com/photo/2015/03/06/11/27/sun-rise-661541_1280.jpg" alt="iamge4" width="350px" height="303.11px">
     </a>
-      
+  </div>
 </body>
 </html>
