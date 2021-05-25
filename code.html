@@ -1,89 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>hello</title>
-  <style>
-    * {
-      padding: 0;
-      margin:0;
-      background-color: #00adb5;
-      font-family: 'Open Sans',sans-serif;
-      text-align: center;
-      color: white;
-    }
-    
-    h1 {
-      font-weight: 800;
-      font-size: 40px;
-      text-align: center;
-      box-sizing: border-box;
+	<title>hello</title>
+	<style>
+		* {
+			padding: 0;
+			margin:0;
+			background-color: #00adb5;
+			font-family: 'Open Sans',sans-serif;
+			text-align: center;
+			color: white;
+		}
+		
+		h1 {
+      		font-weight: 800;
+      		font-size: 40px;
+      		text-align: center;
+      		
 
-        }
-    .maintext {
-      font-size:20px;
-      font-weight: 100;
-      text-align: center;
-      margin-top: 20px;
-      }
+      	}
+      	.maintext {
+      		font-size:20px;
+      		font-weight: 100;
+      		text-align: center;
+      		margin-top: 20px;
+    	}
 
-    .container {
-      position: relative;
-    }
-    img {
-      display: block;
-      left:250px;
-      top: 200px;
-    
-    }
-    .firstimg {
-      top: 200px;
-      left: 250px;
-      position: absolute;
-      border-radius: 50%;
-      border: 0.5px solid #F3FFE2;
-    }
-    .firstimg:hover {
-      opacity: 0.7;
-      }
+		.container {
+			position: relative;
+		}
+		
+		.firstimg {
+			top: 200px;
+			left: 20%;
+			position: absolute;
+			border-radius: 50%;
+      `		border: 0.5px solid #F3FFE2;
+		}
+		.firstimg:hover {
+      		opacity: 0.7;
+    	}
 
-    .secondimg {
-      top: 275px;
-      left: 950px;
-      position: absolute;
-      border: 0.5px solid #F3FFE2;  
+		.secondimg {
+			top: 275px;
+			left: 60%;
+			position: absolute;
+			border: 0.5px solid #F3FFE2;	
+		}
+		.secondimg:hover {
+      		opacity: 0.7;
+    	}
+		.thirdimg {
+			top: 800px;
+			left: 20%;
+			position: absolute;
+			border: 0.5px solid #F3FFE2;
+		}
+		.thirdimg:hover{
+      		opacity: 0.7;
+    	}
+		.fourthimg {
+			top: 810px;
+			left: 60%;
+			position: absolute;
+			clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+			border: 0.5px solid #F3FFE2;
+
+		}
+		.fourthimg:hover{
+      		opacity: 0.7;
+    	}
+    	@media (min-width: 1200px) {
+      		.container {
+      			width: 100%;
+      			height: 100%;
+      		}
+      		
     }
-    .secondimg:hover {
-      opacity: 0.7;
-      }
-    .thirdimg {
-      top: 800px;
-      left: 250px;
-      position: absolute;
-      border: 0.5px solid #F3FFE2;
-    }
-    .thirdimg:hover{
-      opacity: 0.7;
-      }
-    .fourthimg {
-      top: 810px;
-      left: 950px;
-      position: absolute;
-      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-      border: 0.5px solid #F3FFE2;
-    }
-    .fourthimg:hover{
-      opacity: 0.7;
-      }
-    
-  </style>
+
+
+	</style>
 </head>
 <body>
-  <h1>New Zealand</h1>
-    <div class="maintext">This project might be trickier than it seems. Look around carefully. What you see?
+	<h1>New Zealand</h1>
+  	<div class="maintext">This project might be trickier than it seems. Look around carefully. What you see?
     <div>The sky is blue, the grass is green. The sun shines through the window.</div>
-  <div class="container">
+	<div class="container">
     <a href="picture1.html" target="_blank">
-      <img class="firstimg" src="https://cdn.pixabay.com/photo/2015/03/18/10/07/new-zealand-679068_1280.jpg" alt="New Zealand Mountains" width="350px" height="350px">
+      <img class="firstimg" id="firstimg" src="https://cdn.pixabay.com/photo/2015/03/18/10/07/new-zealand-679068_1280.jpg" alt="New Zealand Mountains" width="350px" height="350px">
     </a> 
     <a href="picture2.html" target="_blank">
       <img class="secondimg" src="https://cdn.pixabay.com/photo/2014/12/29/18/45/new-zealand-583176_1280.jpg" alt="New Zealand Lake" width="350px" height="200px">
@@ -94,6 +98,6 @@
     <a href="picture4.html" target="_blank">
       <img class="fourthimg" src="https://cdn.pixabay.com/photo/2015/03/06/11/27/sun-rise-661541_1280.jpg" alt="iamge4" width="350px" height="303.11px">
     </a>
-  </div>
+	</div>
 </body>
 </html>
